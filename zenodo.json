@@ -1,0 +1,12 @@
+{
+  "title": "UCF-Bridge: code and results",
+  "upload_type": "software",
+  "description": "Code and results for the paper \"UCF-Bridge: Learned Lightweight Bridges for Composing Heterogeneous Pretrained Code Models in Java Code Generation\".",
+  "creators": [
+    {"name": "Muria, Billington Muchiri"},
+    {"name": "Mwanjele, Solomon"},
+    {"name": "Bii, Joash Kiprotich"}
+  ],
+  "license": "MIT",
+  "keywords": ["code generation", "pretrained models", "model composition", "Java", "CodeXGLUE"]
+}
