@@ -1,0 +1,50 @@
+{
+ "out_dir": "/kaggle/working/ucf_bridge_results",
+ "dataset": "concode",
+ "csv_path": "",
+ "lang": "java",
+ "n_train": 10000,
+ "n_val": 500,
+ "n_test": 1000,
+ "max_src": 256,
+ "max_tgt": 128,
+ "batch_size": 16,
+ "grad_accum": 1,
+ "epochs": 3,
+ "lr": 5e-05,
+ "lr_bridge": 0.0005,
+ "warmup_frac": 0.05,
+ "weight_decay": 0.01,
+ "clip": 1.0,
+ "amp": "auto",
+ "num_workers": 2,
+ "n_queries": 32,
+ "bridge_layers": 2,
+ "seeds": [
+  13,
+  42,
+  2024
+ ],
+ "screen_seeds": [
+  13
+ ],
+ "screen_steps": 400,
+ "top_k": 3,
+ "main_bridges": [
+  "naive",
+  "linear",
+  "resampler"
+ ],
+ "main_modes": [
+  "dec_tune"
+ ],
+ "lora_baseline": false,
+ "num_beams": 1,
+ "codebleu": false,
+ "compat_n": 512,
+ "sanity_min_bleu": 20.0,
+ "log_every": 50,
+ "time_budget_h": 0.0,
+ "max_runs": 0,
+ "shard": "0/1"
+}

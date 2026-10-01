@@ -1,0 +1,24 @@
+\begin{tabular}{lrrr}
+\toprule
+config & n & pred_syntax_valid_rate & ref_syntax_valid_rate \\
+\midrule
+native:plbart & 3000 & 0.99 & 1.00 \\
+native:codet5 & 3000 & 0.99 & 1.00 \\
+codet5->codet5 | naive | dec_tune & 3000 & 0.99 & 1.00 \\
+plbart->plbart | naive | dec_tune & 3000 & 0.99 & 1.00 \\
+unixcoder->plbart | linear | dec_tune & 3000 & 0.99 & 1.00 \\
+plbart->plbart | resampler | dec_tune & 3000 & 0.99 & 1.00 \\
+codet5->plbart | linear | dec_tune & 3000 & 0.99 & 1.00 \\
+plbart->plbart | linear | dec_tune & 3000 & 0.99 & 1.00 \\
+codet5->plbart | resampler | dec_tune & 3000 & 0.98 & 1.00 \\
+codet5->codet5 | linear | dec_tune & 3000 & 0.98 & 1.00 \\
+codet5->plbart | naive | dec_tune & 3000 & 0.98 & 1.00 \\
+codet5->codegpt | naive | dec_tune & 3000 & 0.98 & 1.00 \\
+codet5->codet5 | resampler | dec_tune & 3000 & 0.98 & 1.00 \\
+unixcoder->plbart | resampler | dec_tune & 3000 & 0.98 & 1.00 \\
+native:codegpt & 3000 & 0.97 & 1.00 \\
+codet5->codegpt | linear | dec_tune & 3000 & 0.96 & 1.00 \\
+codet5->codegpt | resampler | dec_tune & 3000 & 0.95 & 1.00 \\
+unixcoder->plbart | naive | dec_tune & 3000 & 0.79 & 1.00 \\
+\bottomrule
+\end{tabular}

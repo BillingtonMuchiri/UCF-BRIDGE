@@ -1,0 +1,24 @@
+\begin{tabular}{lrrrr}
+\toprule
+config & BLEU & trainable_M & BLEU_per_M_trainable & pareto_optimal \\
+\midrule
+native:plbart & 38.30 & 254.43 & 0.15 & True \\
+native:codet5 & 37.01 & 296.84 & 0.12 & False \\
+codet5->plbart | linear | dec_tune & 33.92 & 173.30 & 0.20 & True \\
+codet5->codet5 | naive | dec_tune & 33.16 & 187.23 & 0.18 & False \\
+plbart->plbart | naive | dec_tune & 33.16 & 172.71 & 0.19 & True \\
+plbart->plbart | linear | dec_tune & 32.63 & 173.30 & 0.19 & False \\
+native:codegpt & 32.17 & 163.04 & 0.20 & True \\
+codet5->codet5 | resampler | dec_tune & 30.53 & 202.03 & 0.15 & False \\
+codet5->codet5 | linear | dec_tune & 30.49 & 187.83 & 0.16 & False \\
+codet5->plbart | resampler | dec_tune & 30.03 & 187.51 & 0.16 & False \\
+codet5->codegpt | linear | dec_tune & 28.71 & 163.63 & 0.18 & False \\
+plbart->plbart | resampler | dec_tune & 28.51 & 187.51 & 0.15 & False \\
+codet5->codegpt | resampler | dec_tune & 24.04 & 177.84 & 0.14 & False \\
+unixcoder->plbart | resampler | dec_tune & 23.20 & 187.51 & 0.12 & False \\
+codet5->plbart | naive | dec_tune & 22.89 & 172.71 & 0.13 & False \\
+unixcoder->plbart | linear | dec_tune & 22.16 & 173.30 & 0.13 & False \\
+codet5->codegpt | naive | dec_tune & 17.00 & 163.04 & 0.10 & False \\
+unixcoder->plbart | naive | dec_tune & 14.55 & 172.71 & 0.08 & False \\
+\bottomrule
+\end{tabular}

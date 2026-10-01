@@ -1,0 +1,24 @@
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+config & n_seeds & BLEU & BLEU_sd & CI_lo & CI_hi & EM & val_bpc & empty_rate & trainable_M & stalled_steps & pred_syntax_valid_rate \\
+\midrule
+native:plbart & 3 & 38.30 & 0.64 & 36.70 & 39.90 & 28.70 & 0.34 & 0.00 & 254.43 & 0 & 0.99 \\
+native:codet5 & 3 & 37.01 & 0.22 & 36.45 & 37.56 & 29.93 & 0.34 & 0.00 & 296.84 & 0 & 0.99 \\
+codet5->plbart | linear | dec_tune & 3 & 33.92 & 0.57 & 32.49 & 35.34 & 18.37 & 0.43 & 0.00 & 173.30 & 0 & 0.99 \\
+codet5->codet5 | naive | dec_tune & 3 & 33.16 & 0.52 & 31.86 & 34.46 & 25.43 & 0.36 & 0.00 & 187.23 & 0 & 0.99 \\
+plbart->plbart | naive | dec_tune & 3 & 33.16 & 0.57 & 31.74 & 34.58 & 23.37 & 0.36 & 0.00 & 172.71 & 0 & 0.99 \\
+plbart->plbart | linear | dec_tune & 3 & 32.63 & 0.19 & 32.15 & 33.11 & 19.67 & 0.40 & 0.00 & 173.30 & 0 & 0.99 \\
+native:codegpt & 3 & 32.17 & 0.19 & 31.71 & 32.64 & 20.50 & 0.35 & 0.00 & 163.04 & 0 & 0.97 \\
+codet5->codet5 | resampler | dec_tune & 3 & 30.53 & 0.85 & 28.41 & 32.64 & 17.93 & 0.47 & 0.00 & 202.03 & 0 & 0.98 \\
+codet5->codet5 | linear | dec_tune & 3 & 30.49 & 0.38 & 29.55 & 31.42 & 21.07 & 0.43 & 0.00 & 187.83 & 0 & 0.98 \\
+codet5->plbart | resampler | dec_tune & 3 & 30.03 & 0.63 & 28.47 & 31.58 & 11.47 & 0.51 & 0.00 & 187.51 & 0 & 0.98 \\
+codet5->codegpt | linear | dec_tune & 3 & 28.71 & 1.00 & 26.22 & 31.20 & 12.83 & 0.41 & 0.00 & 163.63 & 0 & 0.96 \\
+plbart->plbart | resampler | dec_tune & 3 & 28.51 & 0.78 & 26.57 & 30.45 & 11.93 & 0.50 & 0.00 & 187.51 & 0 & 0.99 \\
+codet5->codegpt | resampler | dec_tune & 3 & 24.04 & 0.73 & 22.23 & 25.86 & 2.43 & 0.54 & 0.00 & 177.84 & 0 & 0.95 \\
+unixcoder->plbart | resampler | dec_tune & 3 & 23.20 & 0.64 & 21.61 & 24.78 & 4.10 & 0.55 & 0.00 & 187.51 & 0 & 0.98 \\
+codet5->plbart | naive | dec_tune & 3 & 22.89 & 0.79 & 20.92 & 24.86 & 3.33 & 0.58 & 0.00 & 172.71 & 0 & 0.98 \\
+unixcoder->plbart | linear | dec_tune & 3 & 22.16 & 0.63 & 20.60 & 23.72 & 3.87 & 0.56 & 0.00 & 173.30 & 0 & 0.99 \\
+codet5->codegpt | naive | dec_tune & 3 & 17.00 & 0.77 & 15.08 & 18.91 & 0.57 & 0.57 & 0.00 & 163.04 & 0 & 0.98 \\
+unixcoder->plbart | naive | dec_tune & 3 & 14.55 & 0.16 & 14.15 & 14.95 & 0.67 & 1.15 & 0.00 & 172.71 & 0 & 0.79 \\
+\bottomrule
+\end{tabular}

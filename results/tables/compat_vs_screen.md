@@ -1,0 +1,22 @@
+| enc | dec | hetero | val_bpc | cka | vocab_jaccard | dim_gap |
+|---|---|---|---|---|---|---|
+| codet5 | plbart | True | 0.615 | 0.828 | 0.339 | 0.000 |
+| plbart | plbart | False | 0.713 | 1.000 | 1.000 | 0.000 |
+| unixcoder | plbart | True | 0.714 | 0.664 | 0.280 | 0.000 |
+| codet5 | codegpt | True | 0.737 | 0.307 | 0.214 | 0.000 |
+| roberta | plbart | True | 0.744 | 0.929 | 0.185 | 0.000 |
+| plbart | codegpt | True | 0.761 | 0.379 | 0.185 | 0.000 |
+| codebert | plbart | True | 0.766 | 0.707 | 0.185 | 0.000 |
+| roberta | codegpt | True | 0.796 | 0.379 | 1.000 | 0.000 |
+| codet5 | gpt2 | True | 0.821 | 0.201 | 0.213 | 0.000 |
+| codebert | codegpt | True | 0.822 | 0.261 | 1.000 | 0.000 |
+| unixcoder | codegpt | True | 0.828 | 0.358 | 0.213 | 0.000 |
+| plbart | gpt2 | True | 0.851 | 0.296 | 0.185 | 0.000 |
+| roberta | gpt2 | True | 0.874 | 0.338 | 1.000 | 0.000 |
+| unixcoder | gpt2 | True | 0.880 | 0.263 | 0.213 | 0.000 |
+| codebert | gpt2 | True | 0.897 | 0.185 | 1.000 | 0.000 |
+| codet5 | codet5 | False | 1.031 | 1.000 | 1.000 | 0.000 |
+| plbart | codet5 | True | 1.325 | 0.828 | 0.339 | 0.000 |
+| roberta | codet5 | True | 1.332 | 0.780 | 0.214 | 0.000 |
+| codebert | codet5 | True | 1.403 | 0.609 | 0.214 | 0.000 |
+| unixcoder | codet5 | True | 1.450 | 0.547 | 0.398 | 0.000 |

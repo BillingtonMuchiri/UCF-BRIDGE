@@ -1,0 +1,24 @@
+\begin{tabular}{lrrrr}
+\toprule
+config & n & empty_rate & near_maxlen_rate & len_outlier_rate \\
+\midrule
+codet5->codegpt | linear | dec_tune & 1000 & 0.00 & 0.02 & 0.02 \\
+codet5->codegpt | naive | dec_tune & 1000 & 0.00 & 0.00 & 0.01 \\
+codet5->codegpt | resampler | dec_tune & 1000 & 0.00 & 0.03 & 0.04 \\
+codet5->codet5 | linear | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+codet5->codet5 | naive | dec_tune & 1000 & 0.00 & 0.00 & 0.01 \\
+codet5->codet5 | resampler | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+codet5->plbart | linear | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+codet5->plbart | naive | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+codet5->plbart | resampler | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+native:codegpt & 1000 & 0.00 & 0.01 & 0.01 \\
+native:codet5 & 1000 & 0.00 & 0.00 & 0.00 \\
+native:plbart & 1000 & 0.00 & 0.00 & 0.01 \\
+plbart->plbart | linear | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+plbart->plbart | naive | dec_tune & 1000 & 0.00 & 0.00 & 0.01 \\
+plbart->plbart | resampler | dec_tune & 1000 & 0.00 & 0.00 & 0.01 \\
+unixcoder->plbart | linear | dec_tune & 1000 & 0.00 & 0.00 & 0.01 \\
+unixcoder->plbart | naive | dec_tune & 1000 & 0.00 & 0.04 & 0.02 \\
+unixcoder->plbart | resampler | dec_tune & 1000 & 0.00 & 0.01 & 0.01 \\
+\bottomrule
+\end{tabular}

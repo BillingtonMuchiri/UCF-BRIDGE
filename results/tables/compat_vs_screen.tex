@@ -1,0 +1,26 @@
+\begin{tabular}{llrrrrr}
+\toprule
+enc & dec & hetero & val_bpc & cka & vocab_jaccard & dim_gap \\
+\midrule
+codet5 & plbart & True & 0.61 & 0.83 & 0.34 & 0.00 \\
+plbart & plbart & False & 0.71 & 1.00 & 1.00 & 0.00 \\
+unixcoder & plbart & True & 0.71 & 0.66 & 0.28 & 0.00 \\
+codet5 & codegpt & True & 0.74 & 0.31 & 0.21 & 0.00 \\
+roberta & plbart & True & 0.74 & 0.93 & 0.19 & 0.00 \\
+plbart & codegpt & True & 0.76 & 0.38 & 0.18 & 0.00 \\
+codebert & plbart & True & 0.77 & 0.71 & 0.19 & 0.00 \\
+roberta & codegpt & True & 0.80 & 0.38 & 1.00 & 0.00 \\
+codet5 & gpt2 & True & 0.82 & 0.20 & 0.21 & 0.00 \\
+codebert & codegpt & True & 0.82 & 0.26 & 1.00 & 0.00 \\
+unixcoder & codegpt & True & 0.83 & 0.36 & 0.21 & 0.00 \\
+plbart & gpt2 & True & 0.85 & 0.30 & 0.18 & 0.00 \\
+roberta & gpt2 & True & 0.87 & 0.34 & 1.00 & 0.00 \\
+unixcoder & gpt2 & True & 0.88 & 0.26 & 0.21 & 0.00 \\
+codebert & gpt2 & True & 0.90 & 0.18 & 1.00 & 0.00 \\
+codet5 & codet5 & False & 1.03 & 1.00 & 1.00 & 0.00 \\
+plbart & codet5 & True & 1.32 & 0.83 & 0.34 & 0.00 \\
+roberta & codet5 & True & 1.33 & 0.78 & 0.21 & 0.00 \\
+codebert & codet5 & True & 1.40 & 0.61 & 0.21 & 0.00 \\
+unixcoder & codet5 & True & 1.45 & 0.55 & 0.40 & 0.00 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,7 @@
+scope,measure,n_pairs,spearman_rho,p
+all pairs,cka,20,-0.13238060357011328,0.5779631918280679
+all pairs,vocab_jaccard,20,0.12283377282825371,0.6059108527859747
+all pairs,dim_gap,20,,
+hetero only,cka,18,-0.1413828689370485,0.5757540929543488
+hetero only,vocab_jaccard,18,0.22141822650420248,0.3772412710607044
+hetero only,dim_gap,18,,

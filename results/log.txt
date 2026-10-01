@@ -1,0 +1,279 @@
+[14:22:27] phase=selftest out=/kaggle/working/ucf_bridge_results device=cuda
+[14:22:36] selftest interface checks done over 164 configurations
+[14:22:38]   overfit unixcoder->codet5 [resampler/bridge_only]: loss 4.13 -> 3.09 (ratio 0.75)
+[14:22:40]   overfit unixcoder->codet5 [resampler/dec_tune]: loss 3.90 -> 1.17 (ratio 0.30)
+[14:22:42]   overfit codet5->plbart [resampler/bridge_only]: loss 4.32 -> 4.31 (ratio 1.00)
+[14:22:45]   overfit codet5->plbart [resampler/dec_tune]: loss 3.97 -> 1.66 (ratio 0.42)
+[14:22:46]   overfit codebert->codegpt [resampler/bridge_only]: loss 4.26 -> 4.15 (ratio 0.98)
+[14:22:48]   overfit codebert->codegpt [resampler/dec_tune]: loss 3.83 -> 0.87 (ratio 0.23)
+[14:22:48] SELFTEST OVERALL: PASS
+[14:23:00] phase=screen out=/kaggle/working/ucf_bridge_results device=cuda
+[14:23:00] phase=screen out=/kaggle/working/ucf_bridge_results device=cuda
+[14:23:07] data: train 10000 / val 500 / test 1000
+[14:23:07] 10 runs in this shard, 10 still to do
+[14:23:07] RUN screen__codet5__codet5__resampler__bridge_only__s13__f7d087ab
+[14:23:07] data: train 10000 / val 500 / test 1000
+[14:23:07] 10 runs in this shard, 10 still to do
+[14:23:07] RUN screen__codet5__plbart__resampler__bridge_only__s13__f7d087ab
+[14:24:38]   done: val_loss_tok=1.420, val_bpc=0.615
+[14:24:38] RUN screen__codet5__gpt2__resampler__bridge_only__s13__f7d087ab
+[14:24:58]   done: val_loss_tok=2.377, val_bpc=1.031
+[14:24:58] RUN screen__codet5__codegpt__resampler__bridge_only__s13__f7d087ab
+[14:26:47]   done: val_loss_tok=1.829, val_bpc=0.821
+[14:26:48] RUN screen__plbart__plbart__resampler__bridge_only__s13__f7d087ab
+[14:27:23]   done: val_loss_tok=1.642, val_bpc=0.737
+[14:27:23] RUN screen__plbart__codet5__resampler__bridge_only__s13__f7d087ab
+[14:27:40]   done: val_loss_tok=1.646, val_bpc=0.713
+[14:27:41] RUN screen__plbart__gpt2__resampler__bridge_only__s13__f7d087ab
+[14:28:33]   done: val_loss_tok=3.054, val_bpc=1.325
+[14:28:34] RUN screen__plbart__codegpt__resampler__bridge_only__s13__f7d087ab
+[14:29:14]   done: val_loss_tok=1.896, val_bpc=0.851
+[14:29:15] RUN screen__codebert__plbart__resampler__bridge_only__s13__f7d087ab
+[14:30:05]   done: val_loss_tok=1.695, val_bpc=0.761
+[14:30:05] RUN screen__codebert__codet5__resampler__bridge_only__s13__f7d087ab
+[14:30:26]   done: val_loss_tok=1.768, val_bpc=0.766
+[14:30:26] RUN screen__codebert__gpt2__resampler__bridge_only__s13__f7d087ab
+[14:31:30]   done: val_loss_tok=3.234, val_bpc=1.403
+[14:31:30] RUN screen__codebert__codegpt__resampler__bridge_only__s13__f7d087ab
+[14:32:13]   done: val_loss_tok=1.997, val_bpc=0.897
+[14:32:13] RUN screen__unixcoder__plbart__resampler__bridge_only__s13__f7d087ab
+[14:33:15]   done: val_loss_tok=1.832, val_bpc=0.822
+[14:33:15] RUN screen__unixcoder__codet5__resampler__bridge_only__s13__f7d087ab
+[14:33:23]   done: val_loss_tok=1.649, val_bpc=0.714
+[14:33:23] RUN screen__unixcoder__gpt2__resampler__bridge_only__s13__f7d087ab
+[14:34:39]   done: val_loss_tok=3.343, val_bpc=1.450
+[14:34:39] RUN screen__unixcoder__codegpt__resampler__bridge_only__s13__f7d087ab
+[14:35:10]   done: val_loss_tok=1.961, val_bpc=0.880
+[14:35:10] RUN screen__roberta__plbart__resampler__bridge_only__s13__f7d087ab
+[14:36:20]   done: val_loss_tok=1.717, val_bpc=0.744
+[14:36:20] RUN screen__roberta__gpt2__resampler__bridge_only__s13__f7d087ab
+[14:36:24]   done: val_loss_tok=1.845, val_bpc=0.828
+[14:36:24] RUN screen__roberta__codet5__resampler__bridge_only__s13__f7d087ab
+[14:37:48]   done: val_loss_tok=3.072, val_bpc=1.332
+[14:37:48] RUN screen__roberta__codegpt__resampler__bridge_only__s13__f7d087ab
+[14:38:07]   done: val_loss_tok=1.946, val_bpc=0.874
+[14:39:33]   done: val_loss_tok=1.773, val_bpc=0.796
+[14:39:44] phase=main out=/kaggle/working/ucf_bridge_results device=cuda
+[14:39:44] phase=main out=/kaggle/working/ucf_bridge_results device=cuda
+[14:39:48] data: train 10000 / val 500 / test 1000
+[14:39:48] main pairs (top-3 hetero + homogeneous controls): [('codet5', 'plbart'), ('unixcoder', 'plbart'), ('codet5', 'codegpt'), ('codet5', 'codet5'), ('plbart', 'plbart')]
+[14:39:48] planned main runs: 54
+[14:39:48] 27 runs in this shard, 27 still to do
+[14:39:48] RUN main__native__codegpt__none__full__s13__f038dcd9
+[14:39:48] data: train 10000 / val 500 / test 1000
+[14:39:48] main pairs (top-3 hetero + homogeneous controls): [('codet5', 'plbart'), ('unixcoder', 'plbart'), ('codet5', 'codegpt'), ('codet5', 'codet5'), ('plbart', 'plbart')]
+[14:39:48] planned main runs: 54
+[14:39:48] 27 runs in this shard, 27 still to do
+[14:39:48] RUN main__native__codet5__none__full__s13__f038dcd9
+[14:58:55]   done: val_loss_tok=0.785, val_bpc=0.340, bleu=36.768, sent_bleu=49.254, em=29.800, empty_rate=0.000, len_ratio=0.906, unique_pred_rate=0.953
+[14:58:56] RUN main__codet5__plbart__naive__dec_tune__s13__f038dcd9
+[15:00:19]   done: val_loss_tok=0.778, val_bpc=0.349, bleu=32.058, sent_bleu=42.004, em=20.600, empty_rate=0.000, len_ratio=0.968, unique_pred_rate=0.950
+[15:00:19] RUN main__native__plbart__none__full__s13__f038dcd9
+[15:07:37]   done: val_loss_tok=1.341, val_bpc=0.581, bleu=23.022, sent_bleu=28.384, em=3.400, empty_rate=0.000, len_ratio=1.027, unique_pred_rate=0.675
+[15:07:37] RUN main__codet5__plbart__resampler__dec_tune__s13__f038dcd9
+[15:09:59]   done: val_loss_tok=0.785, val_bpc=0.340, bleu=38.002, sent_bleu=48.505, em=28.600, empty_rate=0.000, len_ratio=0.968, unique_pred_rate=0.961
+[15:09:59] RUN main__codet5__plbart__linear__dec_tune__s13__f038dcd9
+[15:16:30]   done: val_loss_tok=1.167, val_bpc=0.506, bleu=30.465, sent_bleu=37.240, em=12.100, empty_rate=0.000, len_ratio=1.046, unique_pred_rate=0.940
+[15:16:31] RUN main__unixcoder__plbart__linear__dec_tune__s13__f038dcd9
+[15:18:59]   done: val_loss_tok=0.994, val_bpc=0.430, bleu=33.266, sent_bleu=41.926, em=18.200, empty_rate=0.000, len_ratio=0.989, unique_pred_rate=0.944
+[15:19:00] RUN main__unixcoder__plbart__naive__dec_tune__s13__f038dcd9
+[15:24:14]   done: val_loss_tok=1.285, val_bpc=0.557, bleu=22.801, sent_bleu=24.661, em=4.100, empty_rate=0.000, len_ratio=1.049, unique_pred_rate=0.883
+[15:24:15] RUN main__codet5__codegpt__naive__dec_tune__s13__f038dcd9
+[15:26:41]   done: val_loss_tok=2.573, val_bpc=1.114, bleu=14.366, sent_bleu=17.810, em=0.900, empty_rate=0.000, len_ratio=1.128, unique_pred_rate=0.693
+[15:26:41] RUN main__unixcoder__plbart__resampler__dec_tune__s13__f038dcd9
+[15:34:25]   done: val_loss_tok=1.258, val_bpc=0.545, bleu=23.834, sent_bleu=25.465, em=4.200, empty_rate=0.000, len_ratio=1.045, unique_pred_rate=0.888
+[15:34:25] RUN main__codet5__codegpt__linear__dec_tune__s13__f038dcd9
+[15:47:08]   done: val_loss_tok=1.274, val_bpc=0.572, bleu=17.735, sent_bleu=23.657, em=0.900, empty_rate=0.000, len_ratio=0.988, unique_pred_rate=0.196
+[15:47:08] RUN main__codet5__codegpt__resampler__dec_tune__s13__f038dcd9
+[15:57:56]   done: val_loss_tok=0.940, val_bpc=0.422, bleu=27.637, sent_bleu=35.482, em=11.500, empty_rate=0.000, len_ratio=1.018, unique_pred_rate=0.922
+[15:57:57] RUN main__codet5__codet5__naive__dec_tune__s13__f038dcd9
+[15:59:53]   done: val_loss_tok=1.194, val_bpc=0.536, bleu=24.349, sent_bleu=28.350, em=2.800, empty_rate=0.000, len_ratio=1.213, unique_pred_rate=0.647
+[15:59:53] RUN main__codet5__codet5__linear__dec_tune__s13__f038dcd9
+[16:09:59]   done: val_loss_tok=0.836, val_bpc=0.363, bleu=32.575, sent_bleu=45.066, em=25.800, empty_rate=0.000, len_ratio=0.897, unique_pred_rate=0.935
+[16:10:00] RUN main__codet5__codet5__resampler__dec_tune__s13__f038dcd9
+[16:12:08]   done: val_loss_tok=0.995, val_bpc=0.432, bleu=30.518, sent_bleu=42.824, em=20.900, empty_rate=0.000, len_ratio=0.890, unique_pred_rate=0.915
+[16:12:08] RUN main__plbart__plbart__naive__dec_tune__s13__f038dcd9
+[16:18:32]   done: val_loss_tok=0.839, val_bpc=0.363, bleu=32.672, sent_bleu=42.927, em=23.000, empty_rate=0.000, len_ratio=0.941, unique_pred_rate=0.949
+[16:18:33] RUN main__plbart__plbart__resampler__dec_tune__s13__f038dcd9
+[16:21:43]   done: val_loss_tok=1.070, val_bpc=0.464, bleu=31.458, sent_bleu=41.091, em=18.200, empty_rate=0.000, len_ratio=0.966, unique_pred_rate=0.927
+[16:21:43] RUN main__plbart__plbart__linear__dec_tune__s13__f038dcd9
+[16:25:12]   done: val_loss_tok=1.129, val_bpc=0.489, bleu=28.860, sent_bleu=37.460, em=13.600, empty_rate=0.000, len_ratio=0.959, unique_pred_rate=0.933
+[16:25:13] RUN main__native__codet5__none__full__s42__f038dcd9
+[16:28:25]   done: val_loss_tok=0.920, val_bpc=0.398, bleu=32.634, sent_bleu=41.246, em=19.300, empty_rate=0.000, len_ratio=0.999, unique_pred_rate=0.946
+[16:28:26] RUN main__native__codegpt__none__full__s42__f038dcd9
+[16:44:22]   done: val_loss_tok=0.784, val_bpc=0.340, bleu=37.210, sent_bleu=49.182, em=29.900, empty_rate=0.000, len_ratio=0.913, unique_pred_rate=0.953
+[16:44:22] RUN main__codet5__plbart__naive__dec_tune__s42__f038dcd9
+[16:48:53]   done: val_loss_tok=0.776, val_bpc=0.348, bleu=32.389, sent_bleu=41.683, em=20.300, empty_rate=0.000, len_ratio=1.003, unique_pred_rate=0.944
+[16:48:54] RUN main__native__plbart__none__full__s42__f038dcd9
+[16:53:01]   done: val_loss_tok=1.338, val_bpc=0.579, bleu=23.612, sent_bleu=28.335, em=3.100, empty_rate=0.000, len_ratio=1.065, unique_pred_rate=0.684
+[16:53:01] RUN main__codet5__plbart__resampler__dec_tune__s42__f038dcd9
+[16:58:28]   done: val_loss_tok=0.792, val_bpc=0.343, bleu=39.043, sent_bleu=49.260, em=28.300, empty_rate=0.000, len_ratio=0.969, unique_pred_rate=0.959
+[16:58:29] RUN main__codet5__plbart__linear__dec_tune__s42__f038dcd9
+[17:01:49]   done: val_loss_tok=1.173, val_bpc=0.508, bleu=29.310, sent_bleu=36.864, em=11.000, empty_rate=0.000, len_ratio=0.956, unique_pred_rate=0.925
+[17:01:50] RUN main__unixcoder__plbart__linear__dec_tune__s42__f038dcd9
+[17:07:24]   done: val_loss_tok=0.992, val_bpc=0.430, bleu=34.347, sent_bleu=42.522, em=18.600, empty_rate=0.000, len_ratio=0.999, unique_pred_rate=0.951
+[17:07:24] RUN main__unixcoder__plbart__naive__dec_tune__s42__f038dcd9
+[17:09:29]   done: val_loss_tok=1.287, val_bpc=0.558, bleu=21.548, sent_bleu=23.345, em=3.800, empty_rate=0.000, len_ratio=1.024, unique_pred_rate=0.880
+[17:09:29] RUN main__codet5__codegpt__naive__dec_tune__s42__f038dcd9
+[17:14:59]   done: val_loss_tok=2.751, val_bpc=1.191, bleu=14.674, sent_bleu=17.840, em=0.400, empty_rate=0.000, len_ratio=1.173, unique_pred_rate=0.739
+[17:15:00] RUN main__unixcoder__plbart__resampler__dec_tune__s42__f038dcd9
+[17:22:42]   done: val_loss_tok=1.263, val_bpc=0.547, bleu=22.559, sent_bleu=24.277, em=3.900, empty_rate=0.000, len_ratio=1.058, unique_pred_rate=0.897
+[17:22:42] RUN main__codet5__codegpt__linear__dec_tune__s42__f038dcd9
+[17:32:14]   done: val_loss_tok=1.265, val_bpc=0.568, bleu=17.059, sent_bleu=23.573, em=0.600, empty_rate=0.000, len_ratio=0.939, unique_pred_rate=0.205
+[17:32:14] RUN main__codet5__codegpt__resampler__dec_tune__s42__f038dcd9
+[17:44:59]   done: val_loss_tok=1.192, val_bpc=0.535, bleu=24.570, sent_bleu=29.187, em=2.800, empty_rate=0.000, len_ratio=1.159, unique_pred_rate=0.643
+[17:44:59] RUN main__codet5__codet5__linear__dec_tune__s42__f038dcd9
+[17:46:12]   done: val_loss_tok=0.887, val_bpc=0.398, bleu=29.620, sent_bleu=38.253, em=14.000, empty_rate=0.000, len_ratio=1.000, unique_pred_rate=0.932
+[17:46:13] RUN main__codet5__codet5__naive__dec_tune__s42__f038dcd9
+[17:57:10]   done: val_loss_tok=0.988, val_bpc=0.429, bleu=30.091, sent_bleu=42.744, em=20.900, empty_rate=0.000, len_ratio=0.862, unique_pred_rate=0.928
+[17:57:10] RUN main__plbart__plbart__naive__dec_tune__s42__f038dcd9
+[17:58:16]   done: val_loss_tok=0.833, val_bpc=0.361, bleu=33.583, sent_bleu=45.272, em=24.900, empty_rate=0.000, len_ratio=0.924, unique_pred_rate=0.936
+[17:58:17] RUN main__codet5__codet5__resampler__dec_tune__s42__f038dcd9
+[18:03:34]   done: val_loss_tok=0.840, val_bpc=0.364, bleu=33.787, sent_bleu=43.783, em=23.800, empty_rate=0.000, len_ratio=0.942, unique_pred_rate=0.948
+[18:03:34] RUN main__plbart__plbart__resampler__dec_tune__s42__f038dcd9
+[18:09:47]   done: val_loss_tok=1.085, val_bpc=0.471, bleu=30.329, sent_bleu=40.934, em=17.700, empty_rate=0.000, len_ratio=0.936, unique_pred_rate=0.918
+[18:09:47] RUN main__plbart__plbart__linear__dec_tune__s42__f038dcd9
+[18:10:15]   done: val_loss_tok=1.173, val_bpc=0.508, bleu=27.612, sent_bleu=34.104, em=10.200, empty_rate=0.000, len_ratio=1.030, unique_pred_rate=0.920
+[18:10:15] RUN main__native__codet5__none__full__s2024__f038dcd9
+[18:16:26]   done: val_loss_tok=0.920, val_bpc=0.398, bleu=32.819, sent_bleu=41.992, em=20.400, empty_rate=0.000, len_ratio=0.974, unique_pred_rate=0.949
+[18:16:27] RUN main__native__codegpt__none__full__s2024__f038dcd9
+[18:29:29]   done: val_loss_tok=0.783, val_bpc=0.339, bleu=37.045, sent_bleu=49.492, em=30.100, empty_rate=0.000, len_ratio=0.914, unique_pred_rate=0.959
+[18:29:29] RUN main__codet5__plbart__naive__dec_tune__s2024__f038dcd9
+[18:36:47]   done: val_loss_tok=0.778, val_bpc=0.349, bleu=32.072, sent_bleu=41.700, em=20.600, empty_rate=0.000, len_ratio=0.976, unique_pred_rate=0.951
+[18:36:47] RUN main__native__plbart__none__full__s2024__f038dcd9
+[18:38:03]   done: val_loss_tok=1.341, val_bpc=0.581, bleu=22.041, sent_bleu=27.915, em=3.500, empty_rate=0.000, len_ratio=0.972, unique_pred_rate=0.666
+[18:38:03] RUN main__codet5__plbart__resampler__dec_tune__s2024__f038dcd9
+[18:46:22]   done: val_loss_tok=0.791, val_bpc=0.343, bleu=37.863, sent_bleu=48.874, em=29.200, empty_rate=0.000, len_ratio=0.961, unique_pred_rate=0.958
+[18:46:23] RUN main__codet5__plbart__linear__dec_tune__s2024__f038dcd9
+[18:46:54]   done: val_loss_tok=1.177, val_bpc=0.510, bleu=30.307, sent_bleu=37.669, em=11.300, empty_rate=0.000, len_ratio=0.998, unique_pred_rate=0.927
+[18:46:55] RUN main__unixcoder__plbart__linear__dec_tune__s2024__f038dcd9
+[18:54:33]   done: val_loss_tok=1.283, val_bpc=0.556, bleu=22.135, sent_bleu=23.827, em=3.700, empty_rate=0.000, len_ratio=1.027, unique_pred_rate=0.873
+[18:54:33] RUN main__codet5__codegpt__naive__dec_tune__s2024__f038dcd9
+[18:55:16]   done: val_loss_tok=0.984, val_bpc=0.426, bleu=34.136, sent_bleu=42.334, em=18.300, empty_rate=0.000, len_ratio=0.993, unique_pred_rate=0.947
+[18:55:17] RUN main__unixcoder__plbart__naive__dec_tune__s2024__f038dcd9
+[19:02:55]   done: val_loss_tok=2.677, val_bpc=1.159, bleu=14.610, sent_bleu=17.790, em=0.700, empty_rate=0.000, len_ratio=1.214, unique_pred_rate=0.761
+[19:02:55] RUN main__unixcoder__plbart__resampler__dec_tune__s2024__f038dcd9
+[19:10:45]   done: val_loss_tok=1.272, val_bpc=0.551, bleu=23.193, sent_bleu=25.074, em=4.200, empty_rate=0.000, len_ratio=1.075, unique_pred_rate=0.882
+[19:10:45] RUN main__codet5__codegpt__linear__dec_tune__s2024__f038dcd9
+[19:17:19]   done: val_loss_tok=1.277, val_bpc=0.573, bleu=16.198, sent_bleu=22.445, em=0.200, empty_rate=0.000, len_ratio=0.933, unique_pred_rate=0.155
+[19:17:19] RUN main__codet5__codegpt__resampler__dec_tune__s2024__f038dcd9
+[19:30:12]   done: val_loss_tok=1.220, val_bpc=0.548, bleu=23.209, sent_bleu=26.940, em=1.700, empty_rate=0.000, len_ratio=1.227, unique_pred_rate=0.445
+[19:30:12] RUN main__codet5__codet5__linear__dec_tune__s2024__f038dcd9
+[19:34:16]   done: val_loss_tok=0.889, val_bpc=0.399, bleu=28.884, sent_bleu=37.758, em=13.000, empty_rate=0.000, len_ratio=0.977, unique_pred_rate=0.925
+[19:34:17] RUN main__codet5__codet5__naive__dec_tune__s2024__f038dcd9
+[19:42:45]   done: val_loss_tok=1.008, val_bpc=0.437, bleu=30.845, sent_bleu=42.529, em=21.400, empty_rate=0.000, len_ratio=0.908, unique_pred_rate=0.924
+[19:42:45] RUN main__plbart__plbart__naive__dec_tune__s2024__f038dcd9
+[19:46:40]   done: val_loss_tok=0.836, val_bpc=0.363, bleu=33.324, sent_bleu=45.112, em=25.600, empty_rate=0.000, len_ratio=0.927, unique_pred_rate=0.940
+[19:46:41] RUN main__codet5__codet5__resampler__dec_tune__s2024__f038dcd9
+[19:49:13]   done: val_loss_tok=0.837, val_bpc=0.362, bleu=33.021, sent_bleu=43.259, em=23.300, empty_rate=0.000, len_ratio=0.927, unique_pred_rate=0.954
+[19:49:14] RUN main__plbart__plbart__resampler__dec_tune__s2024__f038dcd9
+[19:55:59]   done: val_loss_tok=1.130, val_bpc=0.490, bleu=29.050, sent_bleu=36.717, em=12.000, empty_rate=0.000, len_ratio=1.004, unique_pred_rate=0.930
+[19:58:25]   done: val_loss_tok=1.083, val_bpc=0.470, bleu=29.791, sent_bleu=40.914, em=17.900, empty_rate=0.000, len_ratio=0.922, unique_pred_rate=0.926
+[19:58:26] RUN main__plbart__plbart__linear__dec_tune__s2024__f038dcd9
+[20:05:13]   done: val_loss_tok=0.919, val_bpc=0.398, bleu=32.433, sent_bleu=41.492, em=19.300, empty_rate=0.000, len_ratio=0.969, unique_pred_rate=0.948
+[20:05:26] phase=compat out=/kaggle/working/ucf_bridge_results device=cuda
+[20:05:30] data: train 10000 / val 500 / test 1000
+[20:06:19] compat measures written (20 pairs)
+[20:06:31] phase=analyze out=/kaggle/working/ucf_bridge_results device=cuda
+[20:07:01] 
+| config | n | pred_syntax_valid_rate | ref_syntax_valid_rate |
+|---|---|---|---|
+| native:plbart | 3000 | 0.994 | 1.000 |
+| native:codet5 | 3000 | 0.994 | 1.000 |
+| codet5->codet5 \| naive \| dec_tune | 3000 | 0.991 | 1.000 |
+| plbart->plbart \| naive \| dec_tune | 3000 | 0.990 | 1.000 |
+| unixcoder->plbart \| linear \| dec_tune | 3000 | 0.988 | 1.000 |
+| plbart->plbart \| resampler \| dec_tune | 3000 | 0.988 | 1.000 |
+| codet5->plbart \| linear \| dec_tune | 3000 | 0.988 | 1.000 |
+| plbart->plbart \| linear \| dec_tune | 3000 | 0.986 | 1.000 |
+| codet5->plbart \| resampler \| dec_tune | 3000 | 0.985 | 1.000 |
+| codet5->codet5 \| linear \| dec_tune | 3000 | 0.984 | 1.000 |
+| codet5->plbart \| naive \| dec_tune | 3000 | 0.984 | 1.000 |
+| codet5->codegpt \| naive \| dec_tune | 3000 | 0.983 | 1.000 |
+| codet5->codet5 \| resampler \| dec_tune | 3000 | 0.982 | 1.000 |
+| unixcoder->plbart \| resampler \| dec_tune | 3000 | 0.982 | 1.000 |
+| native:codegpt | 3000 | 0.972 | 1.000 |
+| codet5->codegpt \| linear \| dec_tune | 3000 | 0.963 | 1.000 |
+| codet5->codegpt \| resampler \| dec_tune | 3000 | 0.945 | 1.000 |
+| unixcoder->plbart \| naive \| dec_tune | 3000 | 0.790 | 1.000 |
+[20:07:01] 
+| config | n_seeds | BLEU | BLEU_sd | CI_lo | CI_hi | EM | val_bpc | empty_rate | trainable_M | stalled_steps | pred_syntax_valid_rate |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| native:plbart | 3 | 38.303 | 0.645 | 36.701 | 39.904 | 28.700 | 0.342 | 0.000 | 254.432 | 0 | 0.994 |
+| native:codet5 | 3 | 37.008 | 0.223 | 36.454 | 37.562 | 29.933 | 0.340 | 0.000 | 296.840 | 0 | 0.994 |
+| codet5->plbart \| linear \| dec_tune | 3 | 33.916 | 0.573 | 32.492 | 35.340 | 18.367 | 0.429 | 0.000 | 173.304 | 0 | 0.988 |
+| codet5->codet5 \| naive \| dec_tune | 3 | 33.160 | 0.524 | 31.860 | 34.461 | 25.433 | 0.362 | 0.000 | 187.233 | 0 | 0.991 |
+| plbart->plbart \| naive \| dec_tune | 3 | 33.160 | 0.570 | 31.743 | 34.577 | 23.367 | 0.363 | 0.000 | 172.712 | 0 | 0.990 |
+| plbart->plbart \| linear \| dec_tune | 3 | 32.629 | 0.193 | 32.149 | 33.109 | 19.667 | 0.398 | 0.000 | 173.304 | 0 | 0.986 |
+| native:codegpt | 3 | 32.173 | 0.187 | 31.708 | 32.638 | 20.500 | 0.349 | 0.000 | 163.042 | 0 | 0.972 |
+| codet5->codet5 \| resampler \| dec_tune | 3 | 30.526 | 0.851 | 28.412 | 32.640 | 17.933 | 0.468 | 0.000 | 202.027 | 0 | 0.982 |
+| codet5->codet5 \| linear \| dec_tune | 3 | 30.485 | 0.378 | 29.546 | 31.424 | 21.067 | 0.432 | 0.000 | 187.826 | 0 | 0.984 |
+| codet5->plbart \| resampler \| dec_tune | 3 | 30.027 | 0.626 | 28.472 | 31.582 | 11.467 | 0.508 | 0.000 | 187.506 | 0 | 0.985 |
+| codet5->codegpt \| linear \| dec_tune | 3 | 28.714 | 1.002 | 26.224 | 31.203 | 12.833 | 0.406 | 0.000 | 163.634 | 0 | 0.963 |
+| plbart->plbart \| resampler \| dec_tune | 3 | 28.507 | 0.781 | 26.566 | 30.448 | 11.933 | 0.495 | 0.000 | 187.506 | 0 | 0.988 |
+| codet5->codegpt \| resampler \| dec_tune | 3 | 24.043 | 0.730 | 22.229 | 25.856 | 2.433 | 0.540 | 0.000 | 177.836 | 0 | 0.945 |
+| unixcoder->plbart \| resampler \| dec_tune | 3 | 23.195 | 0.638 | 21.611 | 24.779 | 4.100 | 0.548 | 0.000 | 187.506 | 0 | 0.982 |
+| codet5->plbart \| naive \| dec_tune | 3 | 22.892 | 0.794 | 20.920 | 24.863 | 3.333 | 0.580 | 0.000 | 172.712 | 0 | 0.984 |
+| unixcoder->plbart \| linear \| dec_tune | 3 | 22.161 | 0.627 | 20.603 | 23.719 | 3.867 | 0.557 | 0.000 | 173.304 | 0 | 0.988 |
+| codet5->codegpt \| naive \| dec_tune | 3 | 16.998 | 0.770 | 15.084 | 18.911 | 0.567 | 0.571 | 0.000 | 163.042 | 0 | 0.983 |
+| unixcoder->plbart \| naive \| dec_tune | 3 | 14.550 | 0.163 | 14.146 | 14.954 | 0.667 | 1.155 | 0.000 | 172.712 | 0 | 0.790 |
+[20:07:03] 
+| system | baseline | delta_sentBLEU | CI_lo | CI_hi | p_boot | cohens_d_seeds | welch_p_seeds | p_holm | significant_holm_0.05 |
+|---|---|---|---|---|---|---|---|---|---|
+| codet5->codegpt \| linear \| dec_tune | native:codegpt | -4.631 | -5.687 | -3.573 | 0.000 | -4.798 | 0.024 | 0.003 | True |
+| codet5->codegpt \| linear \| dec_tune | codet5->codegpt \| naive \| dec_tune | 13.939 | 12.654 | 15.259 | 0.000 | 13.109 | 0.000 | 0.003 | True |
+| codet5->codegpt \| naive \| dec_tune | native:codegpt | -18.571 | -20.125 | -17.015 | 0.000 | -27.073 | 0.001 | 0.003 | True |
+| codet5->codegpt \| resampler \| dec_tune | native:codegpt | -13.636 | -15.015 | -12.304 | 0.000 | -15.255 | 0.002 | 0.003 | True |
+| codet5->codegpt \| resampler \| dec_tune | codet5->codegpt \| naive \| dec_tune | 4.934 | 4.051 | 5.839 | 0.000 | 9.388 | 0.000 | 0.003 | True |
+| codet5->codet5 \| linear \| dec_tune | native:codet5 | -6.611 | -7.673 | -5.544 | 0.000 | -21.015 | 0.000 | 0.003 | True |
+| codet5->codet5 \| linear \| dec_tune | codet5->codet5 \| naive \| dec_tune | -2.451 | -3.409 | -1.494 | 0.000 | -5.859 | 0.003 | 0.003 | True |
+| codet5->codet5 \| naive \| dec_tune | native:codet5 | -4.159 | -5.155 | -3.157 | 0.000 | -9.562 | 0.002 | 0.003 | True |
+| codet5->codet5 \| resampler \| dec_tune | native:codet5 | -8.330 | -9.405 | -7.256 | 0.000 | -10.420 | 0.004 | 0.003 | True |
+| codet5->codet5 \| resampler \| dec_tune | codet5->codet5 \| naive \| dec_tune | -4.170 | -5.225 | -3.139 | 0.000 | -3.729 | 0.016 | 0.003 | True |
+| codet5->plbart \| linear \| dec_tune | native:plbart | -6.619 | -7.774 | -5.426 | 0.000 | -7.190 | 0.001 | 0.003 | True |
+| codet5->plbart \| linear \| dec_tune | codet5->plbart \| naive \| dec_tune | 14.050 | 12.679 | 15.457 | 0.000 | 15.927 | 0.000 | 0.003 | True |
+| codet5->plbart \| naive \| dec_tune | native:plbart | -20.668 | -22.254 | -19.063 | 0.000 | -21.315 | 0.000 | 0.003 | True |
+| codet5->plbart \| resampler \| dec_tune | native:plbart | -11.622 | -12.911 | -10.325 | 0.000 | -13.023 | 0.000 | 0.003 | True |
+| codet5->plbart \| resampler \| dec_tune | codet5->plbart \| naive \| dec_tune | 9.046 | 7.862 | 10.231 | 0.000 | 9.985 | 0.000 | 0.003 | True |
+| plbart->plbart \| linear \| dec_tune | native:plbart | -7.303 | -8.405 | -6.186 | 0.000 | -11.921 | 0.002 | 0.003 | True |
+| plbart->plbart \| linear \| dec_tune | plbart->plbart \| naive \| dec_tune | -1.746 | -2.728 | -0.747 | 0.000 | -1.247 | 0.243 | 0.003 | True |
+| plbart->plbart \| naive \| dec_tune | native:plbart | -5.557 | -6.759 | -4.394 | 0.000 | -8.449 | 0.001 | 0.003 | True |
+| plbart->plbart \| resampler \| dec_tune | native:plbart | -12.786 | -14.053 | -11.503 | 0.000 | -13.675 | 0.000 | 0.003 | True |
+| plbart->plbart \| resampler \| dec_tune | plbart->plbart \| naive \| dec_tune | -7.229 | -8.382 | -6.097 | 0.000 | -6.802 | 0.002 | 0.003 | True |
+| unixcoder->plbart \| linear \| dec_tune | native:plbart | -24.936 | -26.794 | -23.015 | 0.000 | -25.380 | 0.000 | 0.003 | True |
+| unixcoder->plbart \| linear \| dec_tune | unixcoder->plbart \| naive \| dec_tune | 6.131 | 4.886 | 7.443 | 0.000 | 16.615 | 0.001 | 0.003 | True |
+| unixcoder->plbart \| naive \| dec_tune | native:plbart | -31.067 | -33.078 | -29.036 | 0.000 | -50.514 | 0.000 | 0.003 | True |
+| unixcoder->plbart \| resampler \| dec_tune | native:plbart | -23.941 | -25.780 | -22.082 | 0.000 | -23.561 | 0.000 | 0.003 | True |
+| unixcoder->plbart \| resampler \| dec_tune | unixcoder->plbart \| naive \| dec_tune | 7.125 | 5.810 | 8.469 | 0.000 | 18.581 | 0.001 | 0.003 | True |
+[20:07:03] 
+| scope | measure | n_pairs | spearman_rho | p |
+|---|---|---|---|---|
+| all pairs | cka | 20 | -0.132 | 0.578 |
+| all pairs | vocab_jaccard | 20 | 0.123 | 0.606 |
+| all pairs | dim_gap | 20 | nan | nan |
+| hetero only | cka | 18 | -0.141 | 0.576 |
+| hetero only | vocab_jaccard | 18 | 0.221 | 0.377 |
+| hetero only | dim_gap | 18 | nan | nan |
+[20:07:05] 
+| config | BLEU | trainable_M | BLEU_per_M_trainable | pareto_optimal |
+|---|---|---|---|---|
+| native:plbart | 38.303 | 254.432 | 0.151 | True |
+| native:codet5 | 37.008 | 296.840 | 0.125 | False |
+| codet5->plbart \| linear \| dec_tune | 33.916 | 173.304 | 0.196 | True |
+| codet5->codet5 \| naive \| dec_tune | 33.160 | 187.233 | 0.177 | False |
+| plbart->plbart \| naive \| dec_tune | 33.160 | 172.712 | 0.192 | True |
+| plbart->plbart \| linear \| dec_tune | 32.629 | 173.304 | 0.188 | False |
+| native:codegpt | 32.173 | 163.042 | 0.197 | True |
+| codet5->codet5 \| resampler \| dec_tune | 30.526 | 202.027 | 0.151 | False |
+| codet5->codet5 \| linear \| dec_tune | 30.485 | 187.826 | 0.162 | False |
+| codet5->plbart \| resampler \| dec_tune | 30.027 | 187.506 | 0.160 | False |
+| codet5->codegpt \| linear \| dec_tune | 28.714 | 163.634 | 0.175 | False |
+| plbart->plbart \| resampler \| dec_tune | 28.507 | 187.506 | 0.152 | False |
+| codet5->codegpt \| resampler \| dec_tune | 24.043 | 177.836 | 0.135 | False |
+| unixcoder->plbart \| resampler \| dec_tune | 23.195 | 187.506 | 0.124 | False |
+| codet5->plbart \| naive \| dec_tune | 22.892 | 172.712 | 0.133 | False |
+| unixcoder->plbart \| linear \| dec_tune | 22.161 | 173.304 | 0.128 | False |
+| codet5->codegpt \| naive \| dec_tune | 16.998 | 163.042 | 0.104 | False |
+| unixcoder->plbart \| naive \| dec_tune | 14.550 | 172.712 | 0.084 | False |
+[20:07:05] failure examples -> /kaggle/working/ucf_bridge_results/failure_examples  (worst 15/config; read these yourself -- the categorization columns are crude heuristics, not a replacement for that)
+[20:07:05] tables -> /kaggle/working/ucf_bridge_results/tables   figures -> /kaggle/working/ucf_bridge_results/figures
