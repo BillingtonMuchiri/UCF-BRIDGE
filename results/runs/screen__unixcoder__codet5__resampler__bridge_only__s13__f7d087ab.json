@@ -1,0 +1,59 @@
+{
+ "spec": {
+  "stage": "screen",
+  "enc": "unixcoder",
+  "dec": "codet5",
+  "bridge": "resampler",
+  "mode": "bridge_only",
+  "seed": 13
+ },
+ "key": "screen__unixcoder__codet5__resampler__bridge_only__s13__f7d087ab",
+ "hp": "f7d087ab",
+ "metrics": {
+  "val_loss_tok": 3.3434082177654343,
+  "val_bpc": 1.4502622348941079
+ },
+ "train": {
+  "steps": 400,
+  "skipped_steps": 0,
+  "first_loss": 8.178077363967896,
+  "last_loss": 3.2381787061691285,
+  "curve": [
+   [
+    50,
+    5.833363075256347
+   ],
+   [
+    100,
+    4.9982506275177006
+   ],
+   [
+    150,
+    4.7762532043457036
+   ],
+   [
+    200,
+    4.461549668312073
+   ],
+   [
+    250,
+    4.045229754447937
+   ],
+   [
+    300,
+    3.6222071743011472
+   ],
+   [
+    350,
+    3.363784670829773
+   ],
+   [
+    400,
+    3.246897554397583
+   ]
+  ],
+  "train_time_s": 77.17747211456299
+ },
+ "total_params": 327957120,
+ "trainable_params": 14793984
+}

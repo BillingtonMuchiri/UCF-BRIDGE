@@ -1,0 +1,59 @@
+{
+ "spec": {
+  "stage": "screen",
+  "enc": "codebert",
+  "dec": "plbart",
+  "bridge": "resampler",
+  "mode": "bridge_only",
+  "seed": 13
+ },
+ "key": "screen__codebert__plbart__resampler__bridge_only__s13__f7d087ab",
+ "hp": "f7d087ab",
+ "metrics": {
+  "val_loss_tok": 1.7677250609912385,
+  "val_bpc": 0.7655819259178757
+ },
+ "train": {
+  "steps": 400,
+  "skipped_steps": 0,
+  "first_loss": 6.635145664215088,
+  "last_loss": 1.7215336322784425,
+  "curve": [
+   [
+    50,
+    3.245076768398285
+   ],
+   [
+    100,
+    1.9506873869895935
+   ],
+   [
+    150,
+    1.8968008756637573
+   ],
+   [
+    200,
+    1.7645674657821655
+   ],
+   [
+    250,
+    1.7935648250579834
+   ],
+   [
+    300,
+    1.728587863445282
+   ],
+   [
+    350,
+    1.7299946069717407
+   ],
+   [
+    400,
+    1.7005381107330322
+   ]
+  ],
+  "train_time_s": 59.34356904029846
+ },
+ "total_params": 312151296,
+ "trainable_params": 14793984
+}

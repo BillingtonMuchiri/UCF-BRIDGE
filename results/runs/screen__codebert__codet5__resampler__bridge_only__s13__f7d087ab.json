@@ -1,0 +1,59 @@
+{
+ "spec": {
+  "stage": "screen",
+  "enc": "codebert",
+  "dec": "codet5",
+  "bridge": "resampler",
+  "mode": "bridge_only",
+  "seed": 13
+ },
+ "key": "screen__codebert__codet5__resampler__bridge_only__s13__f7d087ab",
+ "hp": "f7d087ab",
+ "metrics": {
+  "val_loss_tok": 3.2338726625731846,
+  "val_bpc": 1.4027492574989486
+ },
+ "train": {
+  "steps": 400,
+  "skipped_steps": 0,
+  "first_loss": 7.04975733757019,
+  "last_loss": 3.167050909996033,
+  "curve": [
+   [
+    50,
+    5.498080749511718
+   ],
+   [
+    100,
+    5.0258052539825435
+   ],
+   [
+    150,
+    4.699782371520996
+   ],
+   [
+    200,
+    4.154117193222046
+   ],
+   [
+    250,
+    3.809917812347412
+   ],
+   [
+    300,
+    3.498737483024597
+   ],
+   [
+    350,
+    3.301173658370972
+   ],
+   [
+    400,
+    3.1780424690246583
+   ]
+  ],
+  "train_time_s": 77.29754877090454
+ },
+ "total_params": 326673024,
+ "trainable_params": 14793984
+}
