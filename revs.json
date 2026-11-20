@@ -1,0 +1,14 @@
+{
+ "Salesforce/codet5-base": "02cd2d31bb7c6d0e4d91156167b2de044989c733",
+ "Salesforce/codet5-small": "b1ee9570c289f21b5922b9c768a1ce12957bf968",
+ "uclanlp/plbart-base": "cf5287241fcff3819f6ade49635dc2d77efee032",
+ "microsoft/codebert-base": "3b0952feddeffad0063f274080e3c23d75e7eb39",
+ "microsoft/unixcoder-base": "5604afdc964f6c53782a6813140ade5216b99006",
+ "roberta-base": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+ "gpt2": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+ "gpt2-medium": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+ "Salesforce/codet5p-220m": "2b92f36e2782341a50551759fdba0dd15e821f99",
+ "Salesforce/codet5p-770m": "3f7cc6e80aee6612f41253b5ee28f09f86faa35f",
+ "microsoft/CodeGPT-small-java-adaptedGPT2": "a8f27a529b8c852974b4eabb4b28c9e18b856ce1",
+ "microsoft/CodeGPT-small-py-adaptedGPT2": "54795593677261e65bf5324ec3fa37a85b9affa7"
+}
